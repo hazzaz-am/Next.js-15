@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
 	title: {
@@ -10,7 +11,14 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div>Home Page</div>
-  )
+		<div>
+			<Image
+				src="https://res.cloudinary.com/dmmwi06zc/image/upload/v1737904303/ietcqg2pkdiekh7dooqa.jpg"
+				alt="Keyboard"
+				height="500"
+				width="500"
+			/>
+		</div>
+	);
 }
 export default page
