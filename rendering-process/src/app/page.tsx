@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -12,6 +13,18 @@ export default function Home() {
 					height={38}
 					priority
 				/>
+				<Link
+					href="/about"
+					className="sm:text-2xl font-semibold text-center sm:text-left"
+				>
+					About
+				</Link>
+				<Link
+					href="/dashboard"
+					className="sm:text-2xl font-semibold text-center sm:text-left"
+				>
+					Dashboard
+				</Link>
 				<ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
 					<li className="mb-2">
 						Get started by editing{" "}
