@@ -1,6 +1,7 @@
 "use client";
 
 import { removeProduct } from "@/actions/products";
+import Form from "next/form";
 import Link from "next/link";
 import { useOptimistic } from "react";
 
@@ -45,11 +46,11 @@ export default function ProductDetail({ products }: { products: Product[] }) {
 							{product.description && (
 								<p className="text-slate-500">{product.description}</p>
 							)}
-							<form action={removeProductByID.bind(null, product.id)}>
+							<Form action={removeProductByID.bind(null, product.id)}>
 								<button className="p-2 bg-red-500 rounded-md mt-3 cursor-pointer">
 									Delete
 								</button>
-							</form>
+							</Form>
 						</div>
 					</div>
 				))}
