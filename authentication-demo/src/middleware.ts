@@ -1,5 +1,7 @@
 import { clerkMiddleware } from "@clerk/nextjs/server";
 
+const isProtectedRoute = createRoute
+
 export default clerkMiddleware();
 
 export const config = {
